@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Search music</title>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<!-- Import style -->
+		<link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
+		<!-- Import component library -->
+		<script src="//unpkg.com/element-plus"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<el-table :data="songData" style="width: 100%">
+				<el-table-column type="index" label="serial number" width="150"></el-table-column>
+				<el-table-column prop="id" label="song id"></el-table-column>
+				<el-table-column prop="name" label="song name"></el-table-column>
+				<el-table-column label="singer" :formatter="formatSinger"></el-table-column>
+				<el-table-column prop="album.name" label="album"></el-table-column>
+				<el-table-column label="song length" :formatter="formatSongLength"></el-table-column>
+				<el-table-column fixed="right" label="operate">
+					<template #default="scope">
+						<el-button link type="primary" size="small" @click="doPlay(scope.row)">Play</el-button>
+						<el-button link type="primary" size="small" @click="doDownLoad(scope.row)">Download</el-button>
+					</template>
+				</el-table-column>
+			</el-table>
+		</div>
+		<audio style="width: 100%;" src="" id="player"></audio>
+	</body>
+</html>
+
+<script type="text/javascript">
+	let baseUrl = "http://localhost:9999/";
+	let player = document.getElementById("player");
+
+	const app = {
+		data() {
+			return {
+				songData: []
+			}
+		},
+		methods: {
+			formatSinger(row) {
+				let artists = row.artists;
+				let arr = [];
+				artists.forEach(item => {
+					arr.push(item.name);
+				});
+				return arr.join("， ");
+			},
+			formatSongLength(row) {
+				let duration = row.duration;
+				let minute = Math.floor(Math.round(duration/1000)/60);
+				let second = Math.round(duration/1000)%60;
+				let m = minute < 10 ? "0" + minute : minute;
+				let s = second < 10 ? "0" + second : second;
+				let time = m + ":" + s;
+				return time;
+			},
+			doPlay(row) {
+				let id = row.id;
+				let songPath = "http://music.163.com/song/media/outer/url?id=" + id;
+				player.src = songPath;
+				player.play();
+			},
+			doDownLoad(row) {
+				let id = row.id;
+				let songPath = "http://music.163.com/song/media/outer/url?id=" + id;
+				window.open(songPath);
+			}
+		},
+		created() {
+			var surl = baseUrl + "music/search";
+			axios.get(surl).then((res) => {
+				var data = res.data;
+				if (data.code === 200) {
+					this.songData = data.result.songs;
+				}
+			});
+		}
+	}
+	Vue.createApp(app).use(ElementPlus).mount("#container");
+</script>
