@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/fmmall?characterEncoding=utf-8
+    username: root
+    password: A1234567890@a
+
+mybatis:
+  type-aliases-package: com.qfedu.tkmapperdemo.beans
+  mapper-locations: classpath:mappers/*.xml
