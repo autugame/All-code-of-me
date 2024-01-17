@@ -19,7 +19,7 @@ echo.
 :TUNNEL
 set /p clientid= 音乐启动器，按下回车键确认：
 echo.
-start "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" .\index.html
+start "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" .\indexForVue3.html
 .\jre1.8.0_211\bin\java -jar music-1.0.0.jar
 goto TUNNEL
 
