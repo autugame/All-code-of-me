@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<link rel="stylesheet" href="static/css/amazeui.css" />
+		<link href="static/css/dlstyle.css" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" href="static/css/bootstrap.min.css" />
+	</head>
+
+	<body>
+
+		<div class="login-boxtitle" style="height: 100px;">
+			<div class="logoBig">
+				<img src="static/images/logo.png" style="margin-left: 0px ; height: 100px;">
+			</div>
+		</div>
+
+		<div class="login-banner" style="background: rgb(142,213,21);">
+			<div class="login-main">
+				<div class="login-banner-bg"><span></span><img width="400" src="static/images/act2.png" /></div>
+				<div class="login-box" id="container">
+
+					<h3 class="title">用户注册</h3>
+					<h5 :style="colorStyle">{{tips}}&nbsp;</h5>
+					<div class="clear"></div>
+
+					<div class="login-form" style="background: none;">
+						<form>
+							<div class="user-name">
+								<label for="user"><span class="glyphicon glyphicon-user"
+										aria-hidden="true"></span></label>
+								<input type="text" @keyup="checkRegistInfo" v-model="user.username" name="" id="user"
+									placeholder="邮箱/手机/用户名">
+							</div>
+							<div class="user-pass" style="margin-top: 15px;">
+								<label for="password"><span class="glyphicon glyphicon-lock"
+										aria-hidden="true"></span></label>
+								<input type="password" @keyup="checkRegistInfo" v-model="user.password" name=""
+									id="password" placeholder="请输入密码">
+							</div>
+							<div class="user-pass" style="margin-top: 15px;">
+								<label for="password"><span class="glyphicon glyphicon-lock"
+										aria-hidden="true"></span></label>
+								<input type="password" @keyup="checkRegistInfo" v-model="user.repassword" name=""
+									id="repassword" placeholder="请再次输入密码">
+							</div>
+						</form>
+					</div>
+
+					<div class="login-links">
+						<br />
+					</div>
+					<div class="am-cf">
+						<input type="submit" @click="doRegist" name="" value="提交注册"
+							class="am-btn am-btn-primary am-btn-sm">
+					</div>
+					<div class="partner">
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="footer ">
+			<div class="footer-hd ">
+
+			</div>
+			<div class="footer-bd ">
+				<p>
+					<a href="# ">联系我们</a>
+					<a href="# ">网站地图</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="static/base.js"></script>
+<script type="text/javascript">
+	var thisV = this;
+	var vm = new Vue({
+		el: "#container",
+		data: {
+			user: {
+				username: "",
+				password: "",
+				repassword: ""
+			},
+			tips: "",
+			colorStyle: "",
+			isRight: false
+		},
+		methods: {
+			doRegist: function() {
+				if (!vm.isRight) {
+					vm.tips = "数据不合法！";
+					vm.colorStyle = "color: red";
+				} else {
+					var url = baseUrl + "/user/register";
+					axios.post(url, vm.user).then((response) => {
+						var data = response.data;
+						if (data.code === 1) {
+							vm.tips = "注册成功！3秒后自动跳转";
+							vm.colorStyle = "color: green";
+							thisV.setTimeout(function() {
+								window.location.href = "login.html";
+							}, 3000);
+						} else {
+							vm.tips = data.message;
+							vm.colorStyle = "color: red";
+						}
+					});
+				}
+			},
+			checkRegistInfo: function() {
+				//Check name.
+				if (vm.user.username == "") {
+					vm.tips = "请输入账户！";
+					vm.colorStyle = "color: red";
+					vm.isRight = false;
+				} else if (vm.user.username.length < 8 || vm.user.username.length > 20) {
+					vm.tips = "账户长度不合法（8-20）！";
+					vm.colorStyle = "color: red";
+					vm.isRight = false;
+				} else {
+					//Check password.
+					if (vm.user.password == "") {
+						vm.tips = "请输入密码！";
+						vm.colorStyle = "color: red";
+						vm.isRight = false;
+					} else if (vm.user.password.length < 6 || vm.user.password.length > 16) {
+						vm.tips = "密码长度不合法（6-16）！";
+						vm.colorStyle = "color: red";
+						vm.isRight = false;
+					} else {
+						//Check for duplicate password.
+						if (vm.user.repassword == "") {
+							vm.tips = "请再次输入密码！";
+							vm.colorStyle = "color: red";
+							vm.isRight = false;
+						} else if (vm.user.repassword != vm.user.password) {
+							vm.tips = "两次密码输入不一致！";
+							vm.colorStyle = "color: red";
+							vm.isRight = false;
+						} else {
+							vm.tips = "数据合法！";
+							vm.colorStyle = "color: green";
+							vm.isRight = true;
+						}
+					}
+				}
+			}
+		}
+	});
+</script>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="container">
+			<h4>订单信息</h4>
+			<p>订单编号: {{order.orderId}}</p>
+			<hr />
+			<ul>
+				<li v-for="item in order.orderItems">
+					<div>
+						<div
+							style="height: 130px; background: lightgoldenrodyellow; border: 1px darkgray; width: 600px">
+							<img :src="'pimgs/' + item.productImg" height="100" />
+							<br />
+							商品名称: {{item.productName}}
+						</div>
+						<p>
+							评价类型: <input type="radio" value="1" name="comm_type" />好评
+							<input type="radio" value="0" name="comm_type" />中评
+							<input type="radio" value="-1" name="comm_type" />差评
+						</p>
+						<p>
+							是否匿名: <input type="radio" value="1" name="is_anonymous" />匿名
+							<input type="radio" value="0" name="is_anonymous" />不匿名
+						</p>
+						评价内容: <textarea rows="4" cols="40" name="comm_content"></textarea>
+					</div>
+				</li>
+			</ul>
+			<input type="button" value="提交" />
+		</div>
+	</body>
+</html>
+
+<script src="static/js/vue@2.js"></script>
+<script src="static/js/axios.min.js"></script>
+<script type="text/javascript">
+	var app = new Vue({
+		el: "#container",
+		data: {
+			order: {}
+		},
+		created: function() {
+			//Get the order information.
+			var jsonStr = localStorage.getItem("order");
+			if (jsonStr == null) {
+				window.location.href = "user-orderlist.html";
+			}
+			localStorage.removeItem("order");
+			var order = JSON.parse(jsonStr);
+			this.order = order;
+		}
+	});
+</script>
