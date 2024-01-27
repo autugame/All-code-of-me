@@ -1,0 +1,41 @@
+2024-01-26 14:14:12.872 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 360 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-01-26 14:14:12.876 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-01-26 14:14:14.071 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-01-26 14:14:14.075 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-26 14:14:14.076 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-01-26 14:14:14.077 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-01-26 14:14:14.235 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-01-26 14:14:14.235 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1312 ms
+2024-01-26 14:14:14.302 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-01-26 14:14:18.587 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-01-26 14:14:18.594 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-01-26 14:14:18.635 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-01-26 14:14:32.288 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 13276 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-01-26 14:14:32.291 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-01-26 14:14:33.332 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-01-26 14:14:33.336 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-26 14:14:33.337 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-01-26 14:14:33.337 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-01-26 14:14:33.457 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-01-26 14:14:33.458 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1130 ms
+2024-01-26 14:14:33.511 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-01-26 14:14:34.018 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-01-26 14:14:34.894 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-01-26 14:14:35.078 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-01-26 14:14:35.079 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-01-26 14:14:35.079 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-01-26 14:14:35.080 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2024-01-26 14:14:35.174 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-26 14:14:35.192 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-26 14:14:35.193 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-01-26 14:14:35.208 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-01-26 14:14:35.233 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-01-26 14:14:35.354 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2024-01-26 14:14:35.380 [main] INFO  com.qfedu.fmmall.ApiApplication - Started ApiApplication in 3.539 seconds (JVM running for 4.172)
+2024-01-26 14:14:43.168 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-26 14:14:43.168 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-01-26 14:14:43.169 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-01-26 14:17:41.482 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-01-26 14:17:41.486 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
