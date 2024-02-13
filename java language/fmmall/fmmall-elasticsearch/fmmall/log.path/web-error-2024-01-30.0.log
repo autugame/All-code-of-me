@@ -1,0 +1,66 @@
+2024-01-30 00:54:44.193 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.mvc.pathmatch.matching-strategy' to org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$MatchingStrategy:
+
+    Property: spring.mvc.pathmatch.matching-strategy
+    Value: "ant_path_matche"
+    Origin: class path resource [application.yml] - 14:26
+    Reason: failed to convert java.lang.String to org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$MatchingStrategy (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties.MatchingStrategy.ant_path_matche)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    ANT_PATH_MATCHER
+    PATH_PATTERN_PARSER
+
+2024-01-30 00:55:15.536 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.mvc.pathmatch.matching-strategy' to org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$MatchingStrategy:
+
+    Property: spring.mvc.pathmatch.matching-strategy
+    Value: "ant_path_matche"
+    Origin: class path resource [application.yml] - 14:26
+    Reason: failed to convert java.lang.String to org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$MatchingStrategy (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties.MatchingStrategy.ant_path_matche)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    ANT_PATH_MATCHER
+    PATH_PATTERN_PARSER
+
+2024-01-30 00:55:32.262 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.mvc.pathmatch.matching-strategy' to org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$MatchingStrategy:
+
+    Property: spring.mvc.pathmatch.matching-strategy
+    Value: "ant_path_matche"
+    Origin: class path resource [application.yml] - 14:26
+    Reason: failed to convert java.lang.String to org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$MatchingStrategy (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties.MatchingStrategy.ant_path_matche)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    ANT_PATH_MATCHER
+    PATH_PATTERN_PARSER
+
