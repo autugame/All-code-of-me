@@ -1,0 +1,1169 @@
+2024-02-07 01:40:37.116 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 2672 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 01:40:37.120 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 01:40:37.955 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 01:40:37.957 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 01:40:37.987 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2024-02-07 01:40:38.389 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 01:40:38.394 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:40:38.395 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 01:40:38.395 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 01:40:38.520 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 01:40:38.522 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1350 ms
+2024-02-07 01:40:38.829 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 01:40:39.270 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 01:40:40.071 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 01:40:40.258 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-02-07 01:40:40.259 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-02-07 01:40:40.259 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-02-07 01:40:40.259 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2024-02-07 01:40:40.354 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-02-07 01:40:40.361 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-02-07 01:40:40.362 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-02-07 01:40:40.362 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-02-07 01:40:40.362 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-02-07 01:40:40.362 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-02-07 01:40:40.362 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-02-07 01:40:40.362 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2499b971
+2024-02-07 01:40:40.406 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:40:40.418 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-07 01:40:40.418 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-02-07 01:40:40.432 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-02-07 01:40:40.456 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-02-07 01:40:40.589 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2024-02-07 01:40:40.609 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2024-02-07 01:40:40.609 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-02-07 01:40:40.621 [main] INFO  com.qfedu.fmmall.ApiApplication - Started ApiApplication in 3.96 seconds (JVM running for 4.742)
+2024-02-07 01:40:55.307 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 01:40:55.460 [SpringApplicationShutdownHook] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-02-07 01:40:55.460 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-02-07 01:40:55.460 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 01:40:55.460 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-02-07 01:40:55.463 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 01:40:55.466 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 01:41:11.937 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 26368 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 01:41:11.940 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 01:41:12.680 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 01:41:12.682 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 01:41:12.712 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2024-02-07 01:41:13.096 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 01:41:13.102 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:41:13.103 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 01:41:13.103 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 01:41:13.229 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 01:41:13.230 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1251 ms
+2024-02-07 01:41:13.519 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 01:41:13.960 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 01:41:14.772 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 01:41:14.957 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-02-07 01:41:14.957 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-02-07 01:41:14.957 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-02-07 01:41:14.957 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2024-02-07 01:41:15.048 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-02-07 01:41:15.055 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-02-07 01:41:15.056 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-02-07 01:41:15.056 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-02-07 01:41:15.057 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-02-07 01:41:15.057 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-02-07 01:41:15.057 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-02-07 01:41:15.057 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6b24ddd7
+2024-02-07 01:41:15.098 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:41:15.110 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-07 01:41:15.111 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-02-07 01:41:15.124 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-02-07 01:41:15.149 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-02-07 01:41:15.266 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2024-02-07 01:41:15.283 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2024-02-07 01:41:15.283 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-02-07 01:41:15.294 [main] INFO  com.qfedu.fmmall.ApiApplication - Started ApiApplication in 3.766 seconds (JVM running for 4.512)
+2024-02-07 01:41:17.911 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 01:41:18.053 [SpringApplicationShutdownHook] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-02-07 01:41:18.053 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-02-07 01:41:18.053 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 01:41:18.054 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-02-07 01:41:18.057 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 01:41:18.060 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 01:48:26.742 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 30644 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 01:48:26.744 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 01:48:27.698 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 01:48:27.700 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 01:48:27.727 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-02-07 01:48:28.133 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 01:48:28.138 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:48:28.139 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 01:48:28.139 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 01:48:28.298 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 01:48:28.298 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1515 ms
+2024-02-07 01:48:28.348 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 01:48:28.798 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 01:48:28.957 [main] INFO  org.redisson.Version - Redisson 3.15.6
+2024-02-07 01:48:39.307 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 01:48:39.309 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 01:48:46.158 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 25660 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 01:48:46.160 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 01:48:47.071 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 01:48:47.073 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 01:48:47.101 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-02-07 01:48:47.503 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 01:48:47.507 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:48:47.508 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 01:48:47.509 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 01:48:47.669 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 01:48:47.669 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1473 ms
+2024-02-07 01:48:47.718 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 01:48:48.169 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 01:48:48.319 [main] INFO  org.redisson.Version - Redisson 3.15.6
+2024-02-07 01:48:58.663 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 01:48:58.666 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 01:49:12.399 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 29212 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 01:49:12.402 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 01:49:13.315 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 01:49:13.317 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 01:49:13.344 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-02-07 01:49:13.752 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 01:49:13.756 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:49:13.757 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 01:49:13.757 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 01:49:13.915 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 01:49:13.915 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1479 ms
+2024-02-07 01:49:13.963 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 01:49:14.408 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 01:49:14.559 [main] INFO  org.redisson.Version - Redisson 3.15.6
+2024-02-07 01:49:24.881 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 01:49:24.883 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 01:49:24.885 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-02-07 01:49:24.899 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-02-07 01:52:21.313 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 21460 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 01:52:21.315 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 01:52:22.265 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 01:52:22.266 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 01:52:22.295 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-02-07 01:52:22.709 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 01:52:22.714 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:52:22.715 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 01:52:22.715 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 01:52:22.878 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 01:52:22.878 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1527 ms
+2024-02-07 01:52:22.927 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 01:52:23.383 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 01:52:23.538 [main] INFO  org.redisson.Version - Redisson 3.15.6
+2024-02-07 01:52:23.894 [redisson-netty-2-15] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 01:52:23.916 [redisson-netty-2-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 01:52:24.956 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-02-07 01:52:24.964 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-02-07 01:52:24.964 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-02-07 01:52:25.097 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-02-07 01:52:25.098 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-02-07 01:52:25.099 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-02-07 01:52:25.099 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-02-07 01:52:25.099 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@67dc6b48
+2024-02-07 01:52:25.124 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-07 01:52:25.174 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 01:52:25.374 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-02-07 01:52:25.374 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-02-07 01:52:25.374 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-02-07 01:52:25.375 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2024-02-07 01:52:25.535 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:52:25.541 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-07 01:52:25.542 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-02-07 01:52:25.557 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-02-07 01:52:25.561 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-02-07 01:52:25.562 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-02-07 01:52:25.562 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 01:52:25.562 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-02-07 01:52:25.587 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 01:52:25.590 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 01:52:25.735 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:52:25.735 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-02-07 01:52:25.739 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:52:25.741 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:52:25.751 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-02-07 01:55:47.466 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 13732 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 01:55:47.468 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 01:55:48.417 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 01:55:48.418 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 01:55:48.447 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-02-07 01:55:48.877 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 01:55:48.883 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:55:48.884 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 01:55:48.884 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 01:55:49.048 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 01:55:49.049 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1545 ms
+2024-02-07 01:55:49.099 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 01:55:49.559 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 01:55:49.717 [main] INFO  org.redisson.Version - Redisson 3.15.6
+2024-02-07 01:55:50.068 [redisson-netty-2-23] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 01:55:50.091 [redisson-netty-2-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 01:55:51.123 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-02-07 01:55:51.130 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-02-07 01:55:51.130 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-02-07 01:55:51.131 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-02-07 01:55:51.132 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-02-07 01:55:51.132 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-02-07 01:55:51.132 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-02-07 01:55:51.132 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6d3ad37a
+2024-02-07 01:55:51.292 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-07 01:55:51.342 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 01:55:51.540 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-02-07 01:55:51.541 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-02-07 01:55:51.541 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-02-07 01:55:51.541 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2024-02-07 01:55:51.701 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:55:51.708 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-07 01:55:51.709 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-02-07 01:55:51.724 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-02-07 01:55:51.728 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-02-07 01:55:51.728 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-02-07 01:55:51.728 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 01:55:51.729 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-02-07 01:55:51.753 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 01:55:51.756 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 01:55:51.900 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:55:51.900 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-02-07 01:55:51.902 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:55:51.906 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:55:51.917 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-02-07 01:56:31.013 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 2084 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 01:56:31.015 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 01:56:31.965 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 01:56:31.967 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 01:56:31.996 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-02-07 01:56:32.415 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 01:56:32.421 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:56:32.421 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 01:56:32.421 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 01:56:32.582 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 01:56:32.582 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1531 ms
+2024-02-07 01:56:32.631 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 01:56:33.085 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 01:56:33.242 [main] INFO  org.redisson.Version - Redisson 3.15.6
+2024-02-07 01:56:33.604 [redisson-netty-2-13] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 01:56:33.612 [redisson-netty-2-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 01:56:34.625 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-02-07 01:56:34.761 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-02-07 01:56:34.761 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-02-07 01:56:34.762 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-02-07 01:56:34.763 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-02-07 01:56:34.763 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-02-07 01:56:34.763 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-02-07 01:56:34.763 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@64420e34
+2024-02-07 01:56:34.788 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-07 01:56:34.833 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 01:56:35.036 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-02-07 01:56:35.037 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-02-07 01:56:35.037 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-02-07 01:56:35.037 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2024-02-07 01:56:35.191 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:56:35.200 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-07 01:56:35.201 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-02-07 01:56:35.213 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-02-07 01:56:35.217 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-02-07 01:56:35.217 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-02-07 01:56:35.217 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 01:56:35.218 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-02-07 01:56:35.243 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 01:56:35.246 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 01:56:35.392 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:56:35.393 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-02-07 01:56:35.395 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:56:35.398 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:56:35.408 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-02-07 01:57:47.412 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 25636 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 01:57:47.413 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 01:57:48.354 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 01:57:48.356 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 01:57:48.384 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-02-07 01:57:48.801 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 01:57:48.806 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:57:48.807 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 01:57:48.807 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 01:57:48.967 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 01:57:48.968 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1517 ms
+2024-02-07 01:57:49.018 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 01:57:49.474 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 01:57:49.632 [main] INFO  org.redisson.Version - Redisson 3.15.6
+2024-02-07 01:57:49.994 [redisson-netty-2-17] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 01:57:50.004 [redisson-netty-2-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 01:57:51.023 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-02-07 01:57:51.166 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-02-07 01:57:51.166 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-02-07 01:57:51.167 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-02-07 01:57:51.167 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-02-07 01:57:51.167 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-02-07 01:57:51.167 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-02-07 01:57:51.167 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@43fd77d8
+2024-02-07 01:57:51.191 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-07 01:57:51.238 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 01:57:51.441 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-02-07 01:57:51.441 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-02-07 01:57:51.442 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-02-07 01:57:51.442 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2024-02-07 01:57:51.597 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:57:51.605 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-07 01:57:51.606 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-02-07 01:57:51.618 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-02-07 01:57:51.623 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-02-07 01:57:51.623 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-02-07 01:57:51.623 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 01:57:51.624 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-02-07 01:57:51.648 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 01:57:51.651 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 01:57:51.811 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:57:51.811 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-02-07 01:57:51.815 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:57:51.817 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:57:51.828 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-02-07 01:59:08.333 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 7492 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 01:59:08.335 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 01:59:09.284 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 01:59:09.286 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 01:59:09.315 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-02-07 01:59:09.730 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 01:59:09.735 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:59:09.736 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 01:59:09.736 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 01:59:09.901 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 01:59:09.901 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1530 ms
+2024-02-07 01:59:09.952 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 01:59:10.408 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 01:59:10.566 [main] INFO  org.redisson.Version - Redisson 3.15.6
+2024-02-07 01:59:10.935 [redisson-netty-2-13] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 01:59:10.943 [redisson-netty-2-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 01:59:11.970 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-02-07 01:59:12.115 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-02-07 01:59:12.115 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-02-07 01:59:12.116 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-02-07 01:59:12.117 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-02-07 01:59:12.117 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-02-07 01:59:12.117 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-02-07 01:59:12.117 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@43fd77d8
+2024-02-07 01:59:12.141 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-07 01:59:12.191 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 01:59:12.393 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-02-07 01:59:12.394 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-02-07 01:59:12.394 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-02-07 01:59:12.394 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2024-02-07 01:59:12.553 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:59:12.561 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-07 01:59:12.561 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-02-07 01:59:12.574 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-02-07 01:59:12.578 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-02-07 01:59:12.578 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-02-07 01:59:12.578 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 01:59:12.579 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-02-07 01:59:12.603 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 01:59:12.606 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 01:59:12.753 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:59:12.754 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-02-07 01:59:12.756 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:59:12.759 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2024-02-07 01:59:12.770 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-02-07 02:01:54.767 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 4984 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 02:01:54.776 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 02:01:55.506 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 02:01:55.508 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 02:01:55.541 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2024-02-07 02:01:55.994 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 02:01:55.999 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:01:56.001 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 02:01:56.001 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 02:01:56.144 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 02:01:56.144 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1333 ms
+2024-02-07 02:01:56.436 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 02:01:56.896 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 02:01:57.718 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 02:01:57.901 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-02-07 02:01:57.903 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-02-07 02:01:57.903 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-02-07 02:01:57.903 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2024-02-07 02:01:57.996 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-02-07 02:01:58.004 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-02-07 02:01:58.004 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-02-07 02:01:58.005 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-02-07 02:01:58.005 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-02-07 02:01:58.006 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-02-07 02:01:58.006 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-02-07 02:01:58.006 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3335afcf
+2024-02-07 02:01:58.049 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:01:58.060 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-07 02:01:58.061 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-02-07 02:01:58.073 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-02-07 02:01:58.096 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-02-07 02:01:58.214 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2024-02-07 02:01:58.229 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2024-02-07 02:01:58.229 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-02-07 02:01:58.240 [main] INFO  com.qfedu.fmmall.ApiApplication - Started ApiApplication in 3.902 seconds (JVM running for 4.572)
+2024-02-07 02:02:53.884 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 02:02:54.036 [SpringApplicationShutdownHook] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-02-07 02:02:54.036 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-02-07 02:02:54.036 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 02:02:54.036 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-02-07 02:02:54.039 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 02:02:54.042 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 02:02:56.404 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 21084 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 02:02:56.412 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 02:02:57.127 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 02:02:57.130 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 02:02:57.161 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2024-02-07 02:02:57.554 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 02:02:57.558 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:02:57.559 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 02:02:57.560 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 02:02:57.687 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 02:02:57.687 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1239 ms
+2024-02-07 02:02:57.974 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 02:02:58.420 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 02:02:59.230 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 02:02:59.423 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-02-07 02:02:59.423 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-02-07 02:02:59.423 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-02-07 02:02:59.423 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2024-02-07 02:02:59.525 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-02-07 02:02:59.533 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-02-07 02:02:59.534 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-02-07 02:02:59.534 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-02-07 02:02:59.535 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-02-07 02:02:59.535 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-02-07 02:02:59.535 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-02-07 02:02:59.535 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3335afcf
+2024-02-07 02:02:59.583 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:02:59.597 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-07 02:02:59.598 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-02-07 02:02:59.611 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-02-07 02:02:59.635 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-02-07 02:02:59.759 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2024-02-07 02:02:59.774 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2024-02-07 02:02:59.774 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-02-07 02:02:59.785 [main] INFO  com.qfedu.fmmall.ApiApplication - Started ApiApplication in 3.808 seconds (JVM running for 4.528)
+2024-02-07 02:03:28.363 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 02:03:28.668 [SpringApplicationShutdownHook] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-02-07 02:03:28.668 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-02-07 02:03:28.669 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 02:03:28.670 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-02-07 02:03:28.685 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 02:03:28.691 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 02:03:36.883 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 13556 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 02:03:36.885 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 02:03:37.844 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 02:03:37.846 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 02:03:37.876 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-02-07 02:03:38.299 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 02:03:38.303 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:03:38.305 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 02:03:38.305 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 02:03:38.470 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 02:03:38.471 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1550 ms
+2024-02-07 02:03:38.524 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 02:03:38.987 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 02:03:39.151 [main] INFO  org.redisson.Version - Redisson 3.15.6
+2024-02-07 02:03:39.522 [redisson-netty-2-20] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 02:03:39.530 [redisson-netty-2-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 02:03:40.724 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-02-07 02:03:40.733 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-02-07 02:03:40.733 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-02-07 02:03:40.734 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-02-07 02:03:40.734 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-02-07 02:03:40.734 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-02-07 02:03:40.734 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-02-07 02:03:40.734 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@21a9f95b
+2024-02-07 02:03:40.760 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-07 02:03:40.808 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 02:03:41.011 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-02-07 02:03:41.011 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-02-07 02:03:41.012 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-02-07 02:03:41.012 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2024-02-07 02:03:41.214 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:03:41.221 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-07 02:03:41.223 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-02-07 02:03:41.236 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-02-07 02:03:41.247 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-02-07 02:03:41.247 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-02-07 02:03:41.247 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 02:03:41.247 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-02-07 02:03:41.271 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 02:03:41.274 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 02:03:41.416 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:03:41.416 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-02-07 02:03:41.420 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:03:41.423 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:03:41.434 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-02-07 02:07:05.500 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 12804 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 02:07:05.503 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 02:07:06.457 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 02:07:06.459 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 02:07:06.486 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-02-07 02:07:06.904 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 02:07:06.908 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:07:06.910 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 02:07:06.910 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 02:07:07.074 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 02:07:07.074 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1533 ms
+2024-02-07 02:07:07.125 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 02:07:07.582 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 02:07:07.742 [main] INFO  org.redisson.Version - Redisson 3.15.6
+2024-02-07 02:07:08.113 [redisson-netty-2-17] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 02:07:08.121 [redisson-netty-2-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 02:07:09.282 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-02-07 02:07:09.291 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-02-07 02:07:09.291 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-02-07 02:07:09.292 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-02-07 02:07:09.292 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-02-07 02:07:09.292 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-02-07 02:07:09.292 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-02-07 02:07:09.292 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@64c95480
+2024-02-07 02:07:09.317 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-07 02:07:09.363 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 02:07:09.559 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-02-07 02:07:09.559 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-02-07 02:07:09.560 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-02-07 02:07:09.560 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2024-02-07 02:07:09.754 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:07:09.761 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-07 02:07:09.762 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-02-07 02:07:09.776 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-02-07 02:07:09.786 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-02-07 02:07:09.786 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-02-07 02:07:09.786 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 02:07:09.787 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-02-07 02:07:09.811 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 02:07:09.814 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 02:07:09.954 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:07:09.955 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-02-07 02:07:09.957 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:07:09.960 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:07:09.971 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-02-07 02:07:19.746 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 30144 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 02:07:19.748 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 02:07:20.690 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 02:07:20.691 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 02:07:20.720 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-02-07 02:07:21.133 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 02:07:21.138 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:07:21.139 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 02:07:21.139 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 02:07:21.308 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 02:07:21.308 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1520 ms
+2024-02-07 02:07:21.359 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 02:07:21.812 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 02:07:21.972 [main] INFO  org.redisson.Version - Redisson 3.15.6
+2024-02-07 02:07:22.339 [redisson-netty-2-13] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 02:07:22.350 [redisson-netty-2-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 02:07:23.511 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-02-07 02:07:23.521 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-02-07 02:07:23.521 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-02-07 02:07:23.522 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-02-07 02:07:23.523 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-02-07 02:07:23.523 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-02-07 02:07:23.523 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-02-07 02:07:23.523 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@21a9f95b
+2024-02-07 02:07:23.547 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-07 02:07:23.594 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 02:07:23.789 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-02-07 02:07:23.790 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-02-07 02:07:23.790 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-02-07 02:07:23.791 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2024-02-07 02:07:23.989 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:07:23.996 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-07 02:07:23.997 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-02-07 02:07:24.012 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-02-07 02:07:24.022 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-02-07 02:07:24.022 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-02-07 02:07:24.022 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 02:07:24.023 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-02-07 02:07:24.047 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 02:07:24.051 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 02:07:24.194 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:07:24.194 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-02-07 02:07:24.197 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:07:24.200 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:07:24.212 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-02-07 02:12:30.647 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 16516 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 02:12:30.649 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 02:12:31.612 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 02:12:31.614 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 02:12:31.645 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2024-02-07 02:12:32.084 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 02:12:32.088 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:12:32.089 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 02:12:32.090 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 02:12:32.258 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 02:12:32.258 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1573 ms
+2024-02-07 02:12:32.315 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 02:12:32.786 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 02:12:32.973 [main] INFO  org.redisson.Version - Redisson 3.12.5
+2024-02-07 02:12:33.333 [redisson-netty-2-7] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for /192.168.0.226:6379
+2024-02-07 02:12:33.335 [redisson-netty-2-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for /192.168.0.226:6379
+2024-02-07 02:12:34.420 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-02-07 02:12:34.427 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-02-07 02:12:34.427 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-02-07 02:12:34.428 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-02-07 02:12:34.428 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-02-07 02:12:34.428 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-02-07 02:12:34.429 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-02-07 02:12:34.429 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@75f4d8a8
+2024-02-07 02:12:34.593 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-07 02:12:34.639 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 02:12:34.835 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-02-07 02:12:34.836 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-02-07 02:12:34.836 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-02-07 02:12:34.836 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2024-02-07 02:12:35.048 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:12:35.055 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-07 02:12:35.056 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-02-07 02:12:35.068 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-02-07 02:12:35.079 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-02-07 02:12:35.079 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-02-07 02:12:35.079 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 02:12:35.080 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-02-07 02:12:35.142 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 02:12:35.145 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 02:12:35.301 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:12:35.301 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-02-07 02:12:35.304 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:12:35.307 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:12:35.317 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-02-07 02:13:31.725 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 10416 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 02:13:31.727 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 02:13:32.467 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 02:13:32.469 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 02:13:32.501 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2024-02-07 02:13:32.907 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 02:13:32.912 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:13:32.913 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 02:13:32.913 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 02:13:33.073 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 02:13:33.074 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1311 ms
+2024-02-07 02:13:33.506 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 02:13:33.954 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 02:13:34.774 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 02:13:34.960 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-02-07 02:13:34.960 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-02-07 02:13:34.961 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-02-07 02:13:34.961 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2024-02-07 02:13:35.055 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-02-07 02:13:35.062 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-02-07 02:13:35.063 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-02-07 02:13:35.063 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-02-07 02:13:35.064 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-02-07 02:13:35.064 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-02-07 02:13:35.064 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-02-07 02:13:35.064 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@50df37eb
+2024-02-07 02:13:35.108 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:13:35.120 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-07 02:13:35.121 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-02-07 02:13:35.134 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-02-07 02:13:35.157 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-02-07 02:13:35.282 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2024-02-07 02:13:35.299 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2024-02-07 02:13:35.299 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-02-07 02:13:35.314 [main] INFO  com.qfedu.fmmall.ApiApplication - Started ApiApplication in 4.018 seconds (JVM running for 4.721)
+2024-02-07 02:13:44.108 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 02:13:44.255 [SpringApplicationShutdownHook] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-02-07 02:13:44.256 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-02-07 02:13:44.256 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 02:13:44.256 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-02-07 02:13:44.259 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 02:13:44.262 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 02:30:40.417 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 27060 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 02:30:40.420 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 02:30:41.180 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 02:30:41.182 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 02:30:41.215 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2024-02-07 02:30:41.631 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 02:30:41.635 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:30:41.636 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 02:30:41.637 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 02:30:41.804 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 02:30:41.804 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1347 ms
+2024-02-07 02:30:42.239 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 02:30:42.690 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 02:30:43.512 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 02:30:43.574 [main] INFO  org.redisson.Version - Redisson 3.24.3
+2024-02-07 02:30:56.411 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 02:30:56.413 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 02:31:10.466 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 22924 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 02:31:10.468 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 02:31:11.202 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 02:31:11.203 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 02:31:11.236 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2024-02-07 02:31:11.643 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 02:31:11.649 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:31:11.650 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 02:31:11.650 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 02:31:11.814 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 02:31:11.815 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1311 ms
+2024-02-07 02:31:12.245 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 02:31:12.694 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 02:31:13.504 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 02:31:13.563 [main] INFO  org.redisson.Version - Redisson 3.24.3
+2024-02-07 02:31:26.399 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 02:31:26.401 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 02:31:26.412 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-02-07 02:31:26.421 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-02-07 02:32:13.225 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 20296 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 02:32:13.227 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 02:32:13.968 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 02:32:13.970 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 02:32:14.003 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2024-02-07 02:32:14.410 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 02:32:14.415 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:32:14.416 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 02:32:14.417 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 02:32:14.582 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 02:32:14.582 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1319 ms
+2024-02-07 02:32:15.022 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 02:32:15.475 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 02:32:16.304 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 02:32:16.365 [main] INFO  org.redisson.Version - Redisson 3.24.3
+2024-02-07 02:32:29.194 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 02:32:29.198 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 02:33:43.496 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 13688 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 02:33:43.498 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 02:33:44.239 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 02:33:44.241 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 02:33:44.272 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2024-02-07 02:33:44.682 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 02:33:44.688 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:33:44.689 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 02:33:44.689 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 02:33:44.852 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 02:33:44.852 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1317 ms
+2024-02-07 02:33:45.290 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 02:33:45.747 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 02:33:46.575 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 02:33:46.635 [main] INFO  org.redisson.Version - Redisson 3.24.3
+2024-02-07 02:33:59.482 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 02:33:59.485 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 02:33:59.496 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-02-07 02:33:59.506 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-02-07 02:35:50.159 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 30484 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 02:35:50.161 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 02:35:50.893 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 02:35:50.895 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 02:35:50.928 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2024-02-07 02:35:51.332 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 02:35:51.337 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:35:51.338 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 02:35:51.338 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 02:35:51.506 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 02:35:51.507 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1309 ms
+2024-02-07 02:35:51.949 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 02:35:52.401 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 02:35:53.216 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 02:35:53.276 [main] INFO  org.redisson.Version - Redisson 3.24.3
+2024-02-07 02:36:06.135 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 02:36:06.138 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 02:36:06.149 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-02-07 02:36:06.158 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-02-07 02:37:40.880 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 9012 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 02:37:40.882 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 02:37:41.647 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 02:37:41.649 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 02:37:41.682 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2024-02-07 02:37:42.102 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 02:37:42.106 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:37:42.108 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 02:37:42.108 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 02:37:42.273 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 02:37:42.273 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1353 ms
+2024-02-07 02:37:42.711 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 02:37:43.158 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 02:37:43.972 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 02:37:44.033 [main] INFO  org.redisson.Version - Redisson 3.24.3
+2024-02-07 02:37:44.177 [redisson-netty-4-4] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 02:37:44.237 [redisson-netty-4-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 02:37:44.601 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-02-07 02:37:44.601 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-02-07 02:37:44.601 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-02-07 02:37:44.602 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2024-02-07 02:37:44.690 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-02-07 02:37:44.697 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-02-07 02:37:44.697 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-02-07 02:37:44.698 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-02-07 02:37:44.698 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-02-07 02:37:44.699 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-02-07 02:37:44.699 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-02-07 02:37:44.699 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@797f97e3
+2024-02-07 02:37:44.742 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:37:44.750 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-07 02:37:44.751 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-02-07 02:37:44.764 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-02-07 02:37:44.785 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-02-07 02:37:44.908 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2024-02-07 02:37:44.923 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2024-02-07 02:37:44.923 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-02-07 02:37:44.933 [main] INFO  com.qfedu.fmmall.ApiApplication - Started ApiApplication in 4.495 seconds (JVM running for 5.21)
+2024-02-07 02:37:55.276 [http-nio-8080-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-07 02:37:55.277 [http-nio-8080-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-02-07 02:37:55.278 [http-nio-8080-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-02-07 02:39:52.237 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 02:39:52.393 [SpringApplicationShutdownHook] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-02-07 02:39:52.393 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-02-07 02:39:52.393 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 02:39:52.394 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-02-07 02:39:52.417 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 02:39:52.420 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 02:39:59.123 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 31156 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 02:39:59.126 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 02:39:59.875 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 02:39:59.877 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 02:39:59.910 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2024-02-07 02:40:00.327 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 02:40:00.332 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:40:00.333 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 02:40:00.333 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 02:40:00.497 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 02:40:00.498 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1332 ms
+2024-02-07 02:40:00.940 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 02:40:01.392 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 02:40:02.211 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 02:40:02.273 [main] INFO  org.redisson.Version - Redisson 3.24.3
+2024-02-07 02:40:02.421 [redisson-netty-4-4] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 02:40:02.474 [redisson-netty-4-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 02:40:02.842 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-02-07 02:40:02.842 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-02-07 02:40:02.843 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-02-07 02:40:02.843 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2024-02-07 02:40:02.931 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-02-07 02:40:02.939 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-02-07 02:40:02.939 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-02-07 02:40:02.939 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-02-07 02:40:02.940 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-02-07 02:40:02.940 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-02-07 02:40:02.940 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-02-07 02:40:02.940 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2e1ba142
+2024-02-07 02:40:02.984 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-07 02:40:02.991 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-07 02:40:02.992 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-02-07 02:40:03.005 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-02-07 02:40:03.027 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-02-07 02:40:03.148 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2024-02-07 02:40:03.163 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2024-02-07 02:40:03.163 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-02-07 02:40:03.174 [main] INFO  com.qfedu.fmmall.ApiApplication - Started ApiApplication in 4.485 seconds (JVM running for 5.169)
+2024-02-07 02:40:13.185 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-07 02:40:13.186 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-02-07 02:40:13.187 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-02-07 02:40:22.721 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 02:40:22.876 [SpringApplicationShutdownHook] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-02-07 02:40:22.877 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-02-07 02:40:22.877 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 02:40:22.877 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-02-07 02:40:22.900 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 02:40:22.903 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 19:12:11.219 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 20628 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 19:12:11.222 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 19:12:12.246 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 19:12:12.249 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 19:12:12.295 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 0 Redis repository interfaces.
+2024-02-07 19:12:12.834 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 19:12:12.841 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 19:12:12.843 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 19:12:12.843 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 19:12:13.105 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 19:12:13.105 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1834 ms
+2024-02-07 19:12:13.676 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 19:12:14.290 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 19:12:15.306 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 19:12:15.384 [main] INFO  org.redisson.Version - Redisson 3.24.3
+2024-02-07 19:12:15.579 [redisson-netty-4-4] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 19:12:15.652 [redisson-netty-4-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 19:12:16.113 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-02-07 19:12:16.113 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-02-07 19:12:16.114 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-02-07 19:12:16.115 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2024-02-07 19:12:16.223 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-02-07 19:12:16.232 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-02-07 19:12:16.233 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-02-07 19:12:16.233 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-02-07 19:12:16.234 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-02-07 19:12:16.234 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-02-07 19:12:16.234 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-02-07 19:12:16.234 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6e794f53
+2024-02-07 19:12:16.300 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-07 19:12:16.313 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-07 19:12:16.314 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-02-07 19:12:16.339 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-02-07 19:12:16.372 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-02-07 19:12:16.543 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2024-02-07 19:12:16.563 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2024-02-07 19:12:16.563 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-02-07 19:12:16.575 [main] INFO  com.qfedu.fmmall.ApiApplication - Started ApiApplication in 5.949 seconds (JVM running for 7.694)
+2024-02-07 19:12:23.414 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 19:12:23.667 [SpringApplicationShutdownHook] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-02-07 19:12:23.668 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-02-07 19:12:23.668 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 19:12:23.668 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-02-07 19:12:23.712 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 19:12:23.716 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 19:14:51.102 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 2832 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 19:14:51.106 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 19:14:51.940 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 19:14:51.942 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 19:14:51.977 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2024-02-07 19:14:52.449 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 19:14:52.455 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 19:14:52.456 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 19:14:52.456 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 19:14:52.636 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 19:14:52.636 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1478 ms
+2024-02-07 19:14:53.094 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 19:14:53.572 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 19:14:54.207 [main] INFO  org.redisson.Version - Redisson 3.24.3
+2024-02-07 19:14:54.358 [redisson-netty-4-4] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 19:14:54.425 [redisson-netty-4-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 19:14:54.793 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 19:14:55.129 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-02-07 19:14:55.130 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-02-07 19:14:55.130 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-02-07 19:14:55.130 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2024-02-07 19:14:55.221 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-02-07 19:14:55.230 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-02-07 19:14:55.231 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-02-07 19:14:55.231 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-02-07 19:14:55.232 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-02-07 19:14:55.232 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-02-07 19:14:55.232 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-02-07 19:14:55.232 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@abc7005
+2024-02-07 19:14:55.277 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-07 19:14:55.285 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-07 19:14:55.286 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-02-07 19:14:55.297 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-02-07 19:14:55.320 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-02-07 19:14:55.450 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2024-02-07 19:14:55.466 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2024-02-07 19:14:55.466 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-02-07 19:14:55.476 [main] INFO  com.qfedu.fmmall.ApiApplication - Started ApiApplication in 4.922 seconds (JVM running for 5.657)
+2024-02-07 19:15:04.780 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 19:15:04.942 [SpringApplicationShutdownHook] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-02-07 19:15:04.942 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-02-07 19:15:04.942 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 19:15:04.943 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-02-07 19:15:04.969 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 19:15:04.973 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 19:15:08.688 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 20060 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 19:15:08.690 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 19:15:09.698 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 19:15:09.700 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 19:15:09.740 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
+2024-02-07 19:15:10.314 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 19:15:10.321 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 19:15:10.323 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 19:15:10.324 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 19:15:10.518 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 19:15:10.518 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1738 ms
+2024-02-07 19:15:11.056 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 19:15:11.575 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 19:15:12.314 [main] INFO  org.redisson.Version - Redisson 3.24.3
+2024-02-07 19:15:12.502 [redisson-netty-4-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 19:15:12.577 [redisson-netty-4-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for 192.168.0.226/192.168.0.226:6379
+2024-02-07 19:15:13.165 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-02-07 19:15:13.401 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-02-07 19:15:13.402 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-02-07 19:15:13.402 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-02-07 19:15:13.402 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2024-02-07 19:15:13.515 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-02-07 19:15:13.524 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-02-07 19:15:13.525 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-02-07 19:15:13.525 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-02-07 19:15:13.526 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-02-07 19:15:13.526 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-02-07 19:15:13.526 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-02-07 19:15:13.526 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@45c28c49
+2024-02-07 19:15:13.581 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-07 19:15:13.592 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-07 19:15:13.593 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-02-07 19:15:13.609 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-02-07 19:15:13.639 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-02-07 19:15:13.794 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2024-02-07 19:15:13.810 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2024-02-07 19:15:13.811 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-02-07 19:15:13.824 [main] INFO  com.qfedu.fmmall.ApiApplication - Started ApiApplication in 5.709 seconds (JVM running for 7.435)
+2024-02-07 19:15:47.557 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-07 19:15:47.557 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-02-07 19:15:47.559 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-02-07 19:16:07.035 [http-nio-8080-exec-2] INFO  com.qfedu.fmmall.service.impl.OrderServiceImpl - Add order to begin.
+2024-02-07 19:16:14.082 [http-nio-8080-exec-2] INFO  com.qfedu.fmmall.service.impl.OrderServiceImpl - Stocks are plentiful.
+2024-02-07 19:16:14.126 [http-nio-8080-exec-2] INFO  com.qfedu.fmmall.service.impl.OrderServiceImpl - Add order completed.
+2024-02-07 19:16:35.784 [http-nio-8080-exec-10] INFO  com.qfedu.fmmall.service.impl.OrderServiceImpl - Add order to begin.
+2024-02-07 19:17:25.754 [http-nio-8080-exec-10] INFO  com.qfedu.fmmall.service.impl.OrderServiceImpl - Stocks are plentiful.
+2024-02-07 19:19:51.105 [http-nio-8080-exec-10] INFO  com.qfedu.fmmall.service.impl.OrderServiceImpl - Add order completed.
+2024-02-07 19:20:38.013 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 19:20:38.824 [SpringApplicationShutdownHook] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-02-07 19:20:38.824 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-02-07 19:20:38.824 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-02-07 19:20:38.825 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-02-07 19:20:38.850 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-02-07 19:20:38.856 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-02-07 23:49:42.718 [main] INFO  com.qfedu.fmmall.ApiApplication - Starting ApiApplication using Java 1.8.0_391 on DESKTOP-ISOF7GB with PID 3556 (E:\projects\fmmall\api\target\classes started by A3452 in E:\projects\fmmall)
+2024-02-07 23:49:42.720 [main] INFO  com.qfedu.fmmall.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-07 23:49:43.822 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-07 23:49:43.825 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-07 23:49:43.882 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
+2024-02-07 23:49:44.434 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-07 23:49:44.440 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-07 23:49:44.442 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-07 23:49:44.442 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-02-07 23:49:44.681 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-07 23:49:44.681 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1906 ms
+2024-02-07 23:49:45.179 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-02-07 23:49:45.717 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-02-07 23:49:46.596 [main] INFO  org.redisson.Version - Redisson 3.24.3
