@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/api" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/api/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/api-user-login/pom.xml" />
+        <option value="$PROJECT_DIR$/user-check/pom.xml" />
+        <option value="$PROJECT_DIR$/api-user-regist/pom.xml" />
+        <option value="$PROJECT_DIR$/api-user-register/pom.xml" />
+        <option value="$PROJECT_DIR$/user-save/pom.xml" />
+        <option value="$PROJECT_DIR$/stock-query/pom.xml" />
+        <option value="$PROJECT_DIR$/order-item-add/pom.xml" />
+        <option value="$PROJECT_DIR$/stock-update/pom.xml" />
+        <option value="$PROJECT_DIR$/shopcart-del/pom.xml" />
+        <option value="$PROJECT_DIR$/shopping-cart-del/pom.xml" />
+        <option value="$PROJECT_DIR$/order-submit/pom.xml" />
+        <option value="$PROJECT_DIR$/api-order-submit/pom.xml" />
+        <option value="$PROJECT_DIR$/order-add/pom.xml" />
+        <option value="$PROJECT_DIR$/order-timeout-query/pom.xml" />
+        <option value="$PROJECT_DIR$/order-status-update/pom.xml" />
+        <option value="$PROJECT_DIR$/order-close/pom.xml" />
+        <option value="$PROJECT_DIR$/order-timeout-cancel/pom.xml" />
+        <option value="$PROJECT_DIR$/order-item-query/pom.xml" />
+        <option value="$PROJECT_DIR$/product-sku-query/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/api/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/mapper/pom.xml" />
+        <option value="$PROJECT_DIR$/order-submit/pom.xml" />
+        <option value="$PROJECT_DIR$/service/pom.xml" />
+        <option value="$PROJECT_DIR$/shopcart-del/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
