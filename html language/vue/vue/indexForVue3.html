@@ -45,7 +45,7 @@
 				<el-table-column label="singer" :formatter="formatSinger"></el-table-column>
 				<el-table-column prop="album.name" label="album"></el-table-column>
 				<el-table-column label="song length" :formatter="formatSongLength"></el-table-column>
-				<el-table-column fixed="right" label="operate">
+				<el-table-column fixed="right" label="operation">
 					<template #default="scope">
 						<el-button link type="primary" v-if="scope.row.id == songId && audioStatus == 1" size="small" @click="doPause">Pause</el-button>
 						<el-button link type="primary" v-else-if="scope.row.id == songId && audioStatus == 0" size="small" @click="doContinue">Resume</el-button>
