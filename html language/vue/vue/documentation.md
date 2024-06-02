@@ -6,6 +6,7 @@
 | http://localhost:9999/music/search  | none |
 | http://localhost:9999/music/detail  | id |
 | http://music.163.com/song/media/outer/url  | id |
+| https://music.163.com/api/song/media  | id |
 
 >parameter  
 >**id** song id.  

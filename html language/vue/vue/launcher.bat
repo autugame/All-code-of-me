@@ -10,7 +10,7 @@ Echo                                         autumn-music launcher tool
 ECHO.
 Echo                                         The author: autumn qq number 3452896431
 ECHO.
-Echo                                         QQ group(no)
+Echo                                         QQ group(none)
 ECHO.
 Echo                  ==========================================================================
 Echo.
