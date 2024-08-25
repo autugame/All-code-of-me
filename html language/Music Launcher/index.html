@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+		<script src="js/vue@2.js"></script>
+		<script src="js/axios.min.js"></script>
+		<link rel="stylesheet" href="./css/index.css">
+	</head>
+	<body>
+		<div id="container">
+			<h1 align="center">search music</h1>
+			<div class="select">
+				<h2>Page Size</h2>
+				<select class="form-select" @click="doSelect" aria-label="Default select example" v-model="limit">
+					<option value="10">10</option>
+					<option value="15">15</option>
+					<option value="20">20</option>
+					<option value="50">50</option>
+					<option value="100">100</option>
+				</select>
+			</div>
+			<div class="input-group mb-3 searchBox">
+				<input type="text" class="form-control" placeholder="song name, singer" v-model="keyword"
+					@keyup.enter="doSearch">
+				<button type="button" class="btn btn-success" @click="doSearch"><i class="bi bi-search"></i></button>
+			</div>
+			<div>
+				<table class="table table-success table-striped table-bordered">
+					<tr>
+						<th width="125">serial number</th>
+						<th>song id</th>
+						<th>song name</th>
+						<th>singer</th>
+						<th>album</th>
+						<th width="110">song length</th>
+						<th>operate</th>
+					</tr>
+					<tr v-for="song,index in songs">
+						<td>{{index + 1}}</td>
+						<td>{{song.id}}</td>
+						<td>
+							{{song.name}}
+						</td>
+						<td>
+							<label v-for="artist in song.artists">
+								&nbsp;{{artist.name}}
+							</label>
+						</td>
+						<td>{{song.album.name}}</td>
+						<td>
+							{{Math.floor(Math.round(song.duration/1000)/60) < 10 ? '0' + Math.floor(Math.round(song.duration/1000)/60) : Math.floor(Math.round(song.duration/1000)/60)}}:{{Math.round(song.duration/1000)%60 < 10 ? '0' + (Math.round(song.duration/1000)%60) : Math.round(song.duration/1000)%60}}
+						</td>
+						<td width="10%">
+							<button type="button" v-if="song.id == currentId && status == 1" class="btn btn-warning"
+								@click="doPause">
+								<i class="bi bi-pause-btn">&nbsp;pause</i>
+							</button>
+							<button type="button" v-else-if="song.id == currentId && status == 0"
+								class="btn btn-success" @click="doContinue">
+								<i class="bi bi-play-btn">&nbsp;resume</i>
+							</button>
+							<button type="button" v-else class="btn btn-primary" @click="doPlay(song.id)">
+								<i class="bi bi-plus-circle">&nbsp;play</i>
+							</button>
+							<!-- <button type="button" v-if="song.mvid != 0" style="float: right" class="btn btn-warning">
+								<svg t="1698844120095" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4099" width="20" height="20"><path d="M807.538 408.872l-99.22 231.336c-5.233 12.162-16.68 19.405-28.892 19.837a86.04 86.04 0 0 1-2.907 0c-12.311-0.416-23.858-7.66-29.108-19.837L561.499 441.17v185.847c0 18.359-14.87 33.228-33.228 33.228s-33.23-14.87-33.23-33.228V527.93l-66.755 115.618c-6.396 11.081-18.208 16.93-30.154 16.448-11.43 0.482-22.745-5.367-28.86-16.448l-73.601-133.28v116.749c0 18.359-14.87 33.228-33.229 33.228s-33.229-14.87-33.229-33.228V394.418c0-18.36 14.87-33.229 33.23-33.229 14.104 0 26.067 8.822 30.902 21.2 4.719 2.824 104.786 180.48 104.786 180.48l96.91-167.853s14.87-33.827 33.229-33.827c10.051 0 18.94 4.553 25.037 11.597 3.09-3.538 6.895-6.53 11.414-8.573 16.83-7.642 36.435-0.016 43.778 17.013l69.447 160.908 69.015-160.908c7.31-17.03 26.799-24.656 43.53-17.013 16.714 7.626 24.357 27.63 17.047 44.66z" fill="#e44935" p-id="4100"></path><path d="M927.011 294.733c0-82.573-66.939-149.528-149.528-149.528H245.83c-82.59 0-149.528 66.955-149.528 149.528v431.969c0 82.589 66.939 149.527 149.528 149.527h531.653c82.59 0 149.528-66.938 149.528-149.527v-431.97zM794.097 942.686H229.214c-110.102 0-199.37-89.268-199.37-199.37V278.117c0-110.102 89.268-199.37 199.37-199.37h564.883c110.102 0 199.37 89.268 199.37 199.37v465.197c0 110.103-89.268 199.371-199.37 199.371z" fill="#e44935" p-id="4101"></path></svg>
+								<i>&nbsp;play</i>
+							</button> -->
+						</td>
+					</tr>
+				</table>
+			</div>
+			<nav aria-label="Page navigation example">
+				<ul class="pagination justify-content-end">
+					<li class="page-item">
+						<a :class="previous" @click="previousFun" href="javascript:void(0);" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+						</a>
+					</li>
+					<li class="page-item" v-for="page,index in totalPage">
+						<a class="page-link active" style="pointer-events: none" :data-index="index" @click="doRefrash"
+							v-if="currentPage == index" href="javascript:void(0);">{{index+1}}</a>
+						<a class="page-link" :data-index="index" @click="doRefrash" v-else
+							href="javascript:void(0);">{{index+1}}</a>
+					</li>
+					<li class="page-item">
+						<a :class="next" @click="nextFun" href="javascript:void(0);" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="footer">
+				<img class="songImg" :src="songImg" />
+			</div>
+		</div>
+		<audio style="width: 100%;" src="" id="player"></audio>
+		<script type="text/javascript">
+			var player = document.getElementById("player");
+			var vm = new Vue({
+				el: "#container",
+				data: {
+					keyword: "",
+					songs: [],
+					currentId: 0,
+					status: 0,
+					songImg: "",
+					limit: 15,
+					offset: 0,
+					currentPage: 0,
+					totalPage: 0,
+					previous: "page-link disabled",
+					next: "page-link",
+					songCount: ""
+				},
+				methods: {
+					//type 1 or 10
+					doSearch: function() {
+						vm.offset = 0;
+						vm.currentPage = 0;
+						checkPage();
+						sendRequest();
+					},
+					doPlay: function(songId) {
+						vm.currentId = songId;
+						player.src = "http://music.163.com/song/media/outer/url?id=" + songId;
+						player.play();
+						vm.status = 1;
+						getSongImg(songId);
+					},
+					doPause: function() {
+						player.pause();
+						vm.status = 0;
+					},
+					doContinue: function() {
+						player.play();
+						vm.status = 1;
+					},
+					doRefrash: function(event) {
+						var index = event.srcElement.dataset.index;
+						vm.currentPage = index;
+						if (vm.offset < vm.songCount) {
+							vm.offset = Number(vm.limit)*Number(vm.currentPage);
+						}
+						checkPage();
+						sendRequest();
+					},
+					previousFun: function() {
+						if (vm.currentPage > 0) {
+							vm.currentPage--;
+						}
+						if (vm.offset < vm.songCount) {
+							vm.offset = Number(vm.limit)*Number(vm.currentPage);
+						}
+						checkPage();
+						sendRequest();
+					},
+					nextFun: function() {
+						var currentPage = Number(vm.currentPage) + 1;
+						if (currentPage < vm.totalPage) {
+							vm.currentPage++;
+						}
+						if (vm.offset < vm.songCount) {
+							vm.offset = Number(vm.limit)*Number(vm.currentPage);
+						}
+						checkPage();
+						sendRequest();
+					},
+					doSelect: function() {
+						vm.currentPage = 0;
+						checkPage();
+						sendRequest();
+					}
+				}
+			});
+
+			function checkPage() {
+				var currentPage = Number(vm.currentPage) + 1;
+				if (vm.currentPage == 0) {
+					vm.previous = "page-link disabled";
+				} else {
+					vm.previous = "page-link";
+				}
+				if (currentPage == vm.totalPage) {
+					vm.next = "page-link disabled";
+				} else {
+					vm.next = "page-link";
+				}
+			}
+
+			function sendRequest() {
+				if (vm.keyword == "") {
+					axios.get("http://localhost:9999/music/search", {
+							params: {
+								limit: vm.limit,
+								offset: vm.offset,
+								type: 1
+							}
+						})
+						.then((response) => {
+							var data = response.data;
+							if (data.code === 200) {
+								//Total number of songs.
+								var count = data.result.songCount;
+								vm.songCount = count;
+								vm.totalPage = countPage(count, vm.limit);
+								//Get music collection.
+								var arr = data.result.songs;
+								vm.songs = arr;
+							}
+						});
+				} else {
+					axios.get("http://localhost:9999/music/search", {
+							params: {
+								s: vm.keyword,
+								limit: vm.limit,
+								offset: vm.offset,
+								type: 1
+							}
+						})
+						.then((response) => {
+							var data = response.data;
+							if (data.code === 200) {
+								//Total number of songs.
+								var count = data.result.songCount;
+								vm.songCount = count;
+								vm.totalPage = countPage(count, vm.limit);
+								//Get music collection.
+								var arr = data.result.songs;
+								vm.songs = arr;
+						}
+					});
+				}
+			}
+
+			function getSongImg(songId) {
+				vm.songImg = "./images/loading.gif";
+				axios.get("http://localhost:9999/music/detail", {
+						params: {
+							id: songId
+						}
+					})
+					.then(function(response) {
+						var data = response.data;
+						if (data.code == 200) {
+							var songImg = data.songs[0].album.blurPicUrl;
+							vm.songImg = songImg;
+						}
+					});
+			}
+
+			window.onload = function() {
+				sendRequest();
+			}
+
+			function countPage(count, limit) {
+				if (count % limit == 0) {
+					return count / limit;
+				} else {
+					return Math.ceil(count / limit);
+				}
+			}
+		</script>
+	</body>
+</html>

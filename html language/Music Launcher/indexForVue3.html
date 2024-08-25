@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Search music</title>
+		<script src="js/vue@3/vue.global.js"></script>
+		<!-- Import style -->
+		<link rel="stylesheet" href="css/element-plus/index.css" />
+		<link rel="stylesheet" href="bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+		<!-- Import component library -->
+		<script src="js/element-plus/index.full.js"></script>
+		<script src="js/axios.min.js"></script>
+		<link
+		      rel="stylesheet"
+		      href="https://cdn.jsdelivr.net/npm/element-plus/dist/index.css"
+		 />
+		<link rel="stylesheet" href="./css/index.css">
+	</head>
+	<body>
+		<div id="container">
+			<div class="mt-4">
+				<el-input
+				 v-model="keyword"
+			     placeholder="song name, singer"
+			     class="input-with-select"
+				 @keyup.enter="doSearch"
+			    >
+					<template #prepend>
+						<el-select @change="doSelect" v-model="limit" placeholder="Page size" style="width: 115px">
+							<el-option value="10">10</el-option>
+							<el-option value="15">15</el-option>
+							<el-option value="20">20</el-option>
+							<el-option value="50">50</el-option>
+							<el-option value="100">100</el-option>
+						</el-select>
+					</template>
+					<template #append>
+						<el-button class="bi bi-search" @click="doSearch" />
+					</template>
+			    </el-input>
+			</div>
+			<el-table :data="songData" style="width: 100%">
+				<el-table-column type="index" label="serial number" width="150"></el-table-column>
+				<el-table-column prop="id" label="song id"></el-table-column>
+				<el-table-column prop="name" label="song name"></el-table-column>
+				<el-table-column label="singer" :formatter="formatSinger"></el-table-column>
+				<el-table-column prop="album.name" label="album"></el-table-column>
+				<el-table-column label="song length" :formatter="formatSongLength"></el-table-column>
+				<el-table-column fixed="right" label="operation">
+					<template #default="scope">
+						<el-button link type="primary" v-if="scope.row.id == songId && audioStatus == 1" size="small" @click="doPause">Pause</el-button>
+						<el-button link type="primary" v-else-if="scope.row.id == songId && audioStatus == 0" size="small" @click="doContinue">Resume</el-button>
+						<el-button link type="primary" v-else size="small" @click="doPlay(scope.row)">Play</el-button>
+						<el-button link type="primary" size="small" @click="doDownLoad(scope.row)">Download</el-button>
+					</template>
+				</el-table-column>
+			</el-table>
+			<el-pagination v-if="paginationShow" style="margin-top: 30px;" :page-size="limit" @current-change="pager" background layout="->, prev, pager, next" :total="count" top="80px"></el-pagination>
+			<div class="footer" style="background-color: 240,242,245;">
+				<img class="songImg" :src="songImg" />
+				<li v-for="item, index in lyric" style="display: inline; position: relative; text-align: center; bottom: 60px;">
+					<div v-if="activeIndex == index" style="font-size: 30px; color: lightpink;">
+						{{ item.content }}
+					</div>
+				</li>
+			</div>
+		</div>
+		<audio style="width: 100%;" ontimeupdate="timeUpdateHandler()" onerror="audioError()" id="player"></audio>
+	</body>
+</html>
+
+<script type="text/javascript">
+	let baseUrl = "http://localhost:9999/";
+	let player = document.getElementById("player");
+	let aThis = null;
+
+	const app = {
+		data() {
+			return {
+				songData: [],
+				songId: 0,
+				audioStatus: 0,
+				limit: 15,
+				keyword: "",
+				count: 100,
+				offset: 0,
+				paginationShow: true,
+				songImg: "./images/Music.png",
+				lyric: [{content: "无歌词"}],
+				currentTime: 0,
+				activeIndex: 0
+			}
+		},
+		methods: {
+			formatSinger(row) {
+				let artists = row.artists;
+				let arr = [];
+				artists.forEach(item => {
+					arr.push(item.name);
+				});
+				return arr.join("， ");
+			},
+			formatSongLength(row) {
+				let duration = row.duration;
+				let minute = Math.floor(Math.round(duration/1000)/60);
+				let second = Math.round(duration/1000)%60;
+				let m = minute < 10 ? "0" + minute : minute;
+				let s = second < 10 ? "0" + second : second;
+				let time = m + ":" + s;
+				return time;
+			},
+			doPlay(row) {
+				this.songId = row.id;
+				this.audioStatus = 1;
+				this.activeIndex = 0;
+				let _this = this;
+				let id = row.id;
+				let songPath = "http://music.163.com/song/media/outer/url?id=" + id;
+				player.src = songPath;
+				player.play();
+				getSongImg(this.songId, _this);
+				getSongLyric(this.songId, _this);
+			},
+			doPause: function() {
+				player.pause();
+				this.audioStatus = 0;
+			},
+			doContinue: function() {
+				player.play();
+				this.audioStatus = 1;
+			},
+			doDownLoad(row) {
+				player.pause();
+				this.audioStatus = 0;
+				let id = row.id;
+				let songPath = "http://music.163.com/song/media/outer/url?id=" + id;
+				window.open(songPath);
+			},
+			doSearch() {
+				let url = baseUrl + "music/search";
+				let _this = this;
+				this.offset = 0;
+				this.paginationShow = false;
+				sendSongRequest(url, _this);
+			},
+			pager(currentPage) {
+				let url = baseUrl + "music/search";
+				let _this = this;
+				this.offset = (currentPage - 1) * this.limit;
+				sendSongRequest(url, _this);
+			},
+			doSelect() {
+				let url = baseUrl + "music/search";
+				let _this = this;
+				this.offset = 0;
+				this.paginationShow = false;
+				this.limit = parseInt(this.limit);
+				sendSongRequest(url, _this);
+			}
+		},
+		created() {
+			let url = baseUrl + "music/search";
+			let _this = this;
+			aThis = this;
+			sendSongRequest(url, _this);
+		},
+		watch: {
+			currentTime:function (newvalue)
+			{
+				for (let i = 0; i < this.lyric.length; i++) 
+				{
+				    if (this.lyric[i].timestamp < newvalue) 
+					{
+						this.activeIndex = i;
+				    }
+				}
+			}
+		}
+	};
+	Vue.createApp(app).use(ElementPlus).mount("#container");
+	
+	function sendSongRequest(url, _this) {
+		if (_this.keyword == "") {
+			axios({
+				url: url,
+				method: "get",
+				params: {
+					limit: _this.limit,
+					offset: _this.offset,
+					type: 1
+				}
+			}).then(res => {
+				let data = res.data;
+				_this.count = data.result.songCount;
+				_this.paginationShow = true;
+				if (data.code === 200) {
+					_this.songData = data.result.songs;
+				}
+			});
+		} else {
+			axios({
+				url: url,
+				method: "get",
+				params: {
+					s: _this.keyword,
+					limit: _this.limit,
+					offset: _this.offset,
+					type: 1
+				}
+			}).then(res => {
+				let data = res.data;
+				_this.count = data.result.songCount;
+				_this.paginationShow = true;
+				if (data.code === 200) {
+					_this.songData = data.result.songs;
+				}
+			});
+		}
+	};
+	
+	function audioError() {
+		aThis.$message.error('穷人听不了！');
+	}
+	
+	function getSongImg(songId, _this) {
+		_this.songImg = "./images/loading.gif";
+		
+		axios({
+			url: "http://localhost:9999/music/detail",
+			method: "get",
+			params: {
+				id: songId
+			}
+		}).then(res => {
+			let data = res.data;
+			if (data.code == 200) {
+				let songImg = data.songs[0].album.blurPicUrl;
+				_this.songImg = songImg;
+			}
+		}).catch(function (error) {
+			if (error.response.status == 400) {
+				_this.songImg = "./images/Error_Icon.png";
+			}
+		});
+	}
+	
+	function getSongLyric(songId, _this)
+	{
+		_this.lyric = [];
+		axios.jsonp("https://music.163.com/api/song/media", {id: songId}).then(res => {
+			if (res.songStatus == 1)
+			{
+				let lyricArr = res.lyric.split('[').slice(1);
+				lyricArr.forEach(item => {
+					let arr = item.split(']');
+					let m = parseInt(arr[0].split(':')[0])
+					let s = parseInt(arr[0].split(':')[1])
+					arr[0] = m*60 + s;
+					let lrcObj = {};
+					if (arr[1] != '\n') {
+						lrcObj.timestamp = arr[0];
+						lrcObj.content = arr[1];
+					}
+					_this.lyric.push(lrcObj);
+				})
+			} 
+			else
+			{
+				let lrcObj = {content: "无歌词"};
+				_this.lyric.push(lrcObj)
+			}
+		});
+	}
+	
+	axios.jsonp = (url,data)=>{
+	    if(!url)
+	        throw new Error('url is necessary')
+	    const callback = 'CALLBACK' + Math.random().toString().substr(9,18)
+	    const JSONP = document.createElement('script')
+	          JSONP.setAttribute('type','text/javascript')
+	
+	    const headEle = document.getElementsByTagName('head')[0]
+	
+	    let ret = '';
+	    if(data){
+	        if(typeof data === 'string')
+	            ret = '&' + data;
+	        else if(typeof data === 'object') {
+	            for(let key in data)
+	                ret += '&' + key + '=' + encodeURIComponent(data[key]);
+	        }
+	        ret += '&_time=' + Date.now();
+	    }
+	    JSONP.src = `${url}?callback=${callback}${ret}`;
+	    return new Promise( (resolve,reject) => {
+	        window[callback] = r => {
+	          resolve(r)
+	          headEle.removeChild(JSONP)
+	          delete window[callback]
+	        }
+	        headEle.appendChild(JSONP)
+		})
+	}
+	
+	
+	function timeUpdateHandler() {
+		aThis.currentTime = player.currentTime;
+	}
+</script>
