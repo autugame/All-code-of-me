@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"spitest\startup_stm32f103xb.o"
+"spitest\main.o"
+"spitest\stm32f1xx_it.o"
+"spitest\stm32f1xx_hal_msp.o"
+"spitest\stm32f1xx_hal_gpio_ex.o"
+"spitest\stm32f1xx_hal_spi.o"
+"spitest\stm32f1xx_hal.o"
+"spitest\stm32f1xx_hal_rcc.o"
+"spitest\stm32f1xx_hal_rcc_ex.o"
+"spitest\stm32f1xx_hal_gpio.o"
+"spitest\stm32f1xx_hal_dma.o"
+"spitest\stm32f1xx_hal_cortex.o"
+"spitest\stm32f1xx_hal_pwr.o"
+"spitest\stm32f1xx_hal_flash.o"
+"spitest\stm32f1xx_hal_flash_ex.o"
+"spitest\stm32f1xx_hal_exti.o"
+"spitest\stm32f1xx_hal_tim.o"
+"spitest\stm32f1xx_hal_tim_ex.o"
+"spitest\stm32f1xx_hal_uart.o"
+"spitest\system_stm32f1xx.o"
+--strict --scatter "SPITest\SPITest.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SPITest.map" -o SPITest\SPITest.axf
