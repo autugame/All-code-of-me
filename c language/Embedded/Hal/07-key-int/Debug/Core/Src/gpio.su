@@ -1,0 +1,7 @@
+../Core/Src/gpio.c:42:6:MX_GPIO_Init	40	static
+../Core/Src/gpio.c:87:6:LED_Control	16	static
+../Core/Src/gpio.c:113:6:LED_Test	8	static
+../Core/Src/gpio.c:123:6:Beep_Control	16	static
+../Core/Src/gpio.c:135:6:Beep_Test	8	static
+../Core/Src/gpio.c:143:9:Key_Scan	16	static
+../Core/Src/gpio.c:157:6:Key_Test	16	static

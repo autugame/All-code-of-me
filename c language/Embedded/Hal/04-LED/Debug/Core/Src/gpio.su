@@ -1,0 +1,3 @@
+../Core/Src/gpio.c:42:6:MX_GPIO_Init	32	static
+../Core/Src/gpio.c:64:6:LED_Control	16	static
+../Core/Src/gpio.c:90:6:LED_Test	8	static

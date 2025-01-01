@@ -1,0 +1,7 @@
+../Core/Src/gpio.c:42:6:MX_GPIO_Init	1
+../Core/Src/gpio.c:80:6:LED_Control	7
+../Core/Src/gpio.c:106:6:LED_Test	1
+../Core/Src/gpio.c:116:6:Beep_Control	3
+../Core/Src/gpio.c:128:6:Beep_Test	1
+../Core/Src/gpio.c:136:9:Key_Scan	3
+../Core/Src/gpio.c:150:6:Key_Test	3
