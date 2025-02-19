@@ -1,0 +1,3 @@
+../Core/Src/wwdg.c:31:6:MX_WWDG_Init	2
+../Core/Src/wwdg.c:56:6:HAL_WWDG_MspInit	2
+../Core/Src/wwdg.c:77:6:HAL_WWDG_EarlyWakeupCallback	3
