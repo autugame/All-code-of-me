@@ -1,0 +1,3 @@
+../Core/Src/gpio.c:42:6:MX_GPIO_Init	1
+../Core/Src/gpio.c:94:6:LED_Control	7
+../Core/Src/gpio.c:120:6:Beep_Control	3
