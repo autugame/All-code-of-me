@@ -1,3 +1,0 @@
-../Core/Src/freertos_dynamic_tasks_demo.c:15:6:freertos_dynamic_tasks_init	16	static
-../Core/Src/freertos_dynamic_tasks_demo.c:22:6:start_task	24	static
-../Core/Src/freertos_dynamic_tasks_demo.c:30:6:start_task1	16	static

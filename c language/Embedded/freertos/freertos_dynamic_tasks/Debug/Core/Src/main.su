@@ -1,5 +1,0 @@
-../Core/Src/main.c:64:5:main	8	static
-../Core/Src/main.c:106:6:SystemClock_Config	72	static
-../Core/Src/main.c:140:13:MX_GPIO_Init	32	static
-../Core/Src/main.c:175:6:HAL_TIM_PeriodElapsedCallback	16	static
-../Core/Src/main.c:191:6:Error_Handler	4	static,ignoring_inline_asm
