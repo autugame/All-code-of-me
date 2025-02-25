@@ -1,0 +1,4 @@
+../Core/Src/freertos_demo.c:32:13:StartTask	1
+../Core/Src/freertos_demo.c:43:13:Task1	2
+../Core/Src/freertos_demo.c:57:13:Task2	1
+../Core/Src/freertos_demo.c:66:6:FreeRTOSStart	2
